@@ -1,0 +1,18 @@
+Algorithme EuclideEtendu(a, b)
+Entrée :
+    a, b Sont des entiers
+Sortie :
+    pgcd(a, b),  x, y
+
+Tant que r1 ≠ 0 :
+    a. Calculer le quotient q = r0 // r1
+    b. Calculer le reste r2 = r0 - q * r1
+    c. Mettre à jour les coefficients de Bézout :
+        x2 = x0 - q * x1
+        y2 = y0 - q * y1
+    d. Mettre à jour les valeurs :
+        r0 = r1, r1 = r2
+        x0 = x1, x1 = x2
+        y0 = y1, y1 = y2
+
+Retourner pgcd = r0, x = x0, y = y0
